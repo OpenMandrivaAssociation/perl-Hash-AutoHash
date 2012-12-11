@@ -69,3 +69,25 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Mon Apr 18 2011 Funda Wang <fwang@mandriva.org> 1.120.0-2mdv2011.0
++ Revision: 654995
+- rebuild for updated spec-helper
+
+* Tue Mar 02 2010 Jérôme Quelin <jquelin@mandriva.org> 1.120.0-1mdv2011.0
++ Revision: 513475
+- update to 1.12
+
+* Thu Feb 25 2010 Jérôme Quelin <jquelin@mandriva.org> 1.110.0-1mdv2010.1
++ Revision: 510970
+- update to 1.11
+
+* Tue Nov 17 2009 Jérôme Quelin <jquelin@mandriva.org> 1.100.0-1mdv2010.1
++ Revision: 466797
+- import perl-Hash-AutoHash
+
+
+* Tue Nov 17 2009 cpan2dist 1.10-1mdv
+- initial mdv release, generated with cpan2dist
