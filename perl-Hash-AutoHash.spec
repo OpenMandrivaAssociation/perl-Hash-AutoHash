@@ -1,15 +1,15 @@
 %define upstream_name    Hash-AutoHash
-%define upstream_version 1.12
+%define upstream_version 1.17
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    1
 
 Summary:    Object-oriented access to real and tied hashes
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Hash/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Hash/Hash-AutoHash-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Carp)
 BuildRequires: perl(Exporter)
@@ -22,7 +22,6 @@ BuildRequires: perl(Tie::Hash::MultiValue)
 BuildRequires: perl(Tie::ToObject)
 BuildRequires: perl(Module::Build::Compat)
 BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This is yet another module that lets you access or change the elements of a
@@ -56,14 +55,11 @@ way.
 %{make} test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
 %clean
-rm -rf %buildroot
 
 %files
-%defattr(-,root,root)
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
@@ -91,3 +87,4 @@ rm -rf %buildroot
 
 * Tue Nov 17 2009 cpan2dist 1.10-1mdv
 - initial mdv release, generated with cpan2dist
+
