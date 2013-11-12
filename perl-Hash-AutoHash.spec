@@ -12,6 +12,7 @@ Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Hash/Hash-AutoHash-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Carp)
+BuildRequires: perl(Test::Pod::Content)
 BuildRequires: perl(Exporter)
 BuildRequires: perl(List::MoreUtils)
 BuildRequires: perl(Scalar::Util)
