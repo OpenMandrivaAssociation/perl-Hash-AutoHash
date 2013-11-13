@@ -13,6 +13,7 @@ Source0:    http://www.cpan.org/modules/by-module/Hash/Hash-AutoHash-%{upstream_
 
 BuildRequires: perl(Carp)
 BuildRequires: perl(Test::Pod::Content)
+BuildRequires: perl(Test::Pod)
 BuildRequires: perl(Exporter)
 BuildRequires: perl(List::MoreUtils)
 BuildRequires: perl(Scalar::Util)
