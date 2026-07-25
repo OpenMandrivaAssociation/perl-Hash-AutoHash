@@ -2,14 +2,14 @@
 %define upstream_version 1.17
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Version:    %{upstream_version}
+Release:    4
 
 Summary:    Object-oriented access to real and tied hashes
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Hash/Hash-AutoHash-%{upstream_version}.tar.gz
+Url:        https://metacpan.org/dist/Hash-AutoHash
+Source0:    https://cpan.metacpan.org/authors/id/N/NA/NATG/Hash-AutoHash-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Carp)
