@@ -1,15 +1,13 @@
 %define upstream_name    Hash-AutoHash
-%define upstream_version 1.17
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    4
+Version:    1.17
+Release:    5
 
 Summary:    Object-oriented access to real and tied hashes
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://metacpan.org/dist/Hash-AutoHash
-Source0:    https://cpan.metacpan.org/authors/id/N/NA/NATG/Hash-AutoHash-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/N/NA/NATG/Hash-AutoHash-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Carp)
@@ -47,7 +45,7 @@ object. Once the objects are constructed, the class treats them the same
 way.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
